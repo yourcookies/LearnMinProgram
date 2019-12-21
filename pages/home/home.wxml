@@ -1,27 +1,36 @@
 <!--pages/home/home.wxml-->
 
-<!-- 1,小程序的数据绑定:    利用  {{变量}} -> 双大括号语法 -->
-<view> hello {{name}} </view>
-<view> 我的年龄:{{age + 1}} </view>
-<view> ------------------ 分割线 ------------------- \n </view>
+ <!--
 
+  获取微信用户的基本信息的方式：
 
-<!-- 2,列表展示:   利用指令 wx:for -->
-<view wx:for="{{students}}"> {{item.name}} -- {{item.age}} -- {{item.id}} </view>
-<view> ------------------ 分割线 ------------------- \n </view>
+     1.wx.getUserInfo – 即将废弃的接口；   eg： app.js 的 onShow
 
+     2.button组件 – 将open-type改成getUserInfo，并且绑定bindgetuserinfo事件去获取；
 
-<!-- 3,事件监听改变data -->
-<view> 当前计数: {{counter}} \n </view>
-<button style="background-color:pink" size="mini" bindtap="handleBthClick"> + </button>
-<button style="background-color:skyblue" size="mini" bindtap="handleSubtraction"> - </button>
+     3.使用open-data组件展示用户信息；
+
+      4.保存全局变量
+ -->
 
 
 
-<!-- 
-  编程范式:
-      1, 命令式编程
-      2, 声明式编程 
--->
 
+
+<!--  2.button组件 – 将open-type改成getUserInfo，并且绑定bindgetuserinfo事件去获取； -->
+<button size="mini" 
+        bindgetuserinfo="handleGetUserInfo"
+        open-type="getUserInfo">  获取授权 </button>
  
+
+
+<text>\n</text>
+
+
+
+<!--  3.使用open-data组件 只能展示用户信息；    userNickName:用户昵称  userAvatarUrl:用户头像  -->
+<open-data type="userNickName"></open-data>
+
+<open-data type="userAvatarUrl"></open-data>
+
+
