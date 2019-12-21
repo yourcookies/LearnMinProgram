@@ -1,3 +1,27 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello world\n</text>
-<button size="mini" class="btn">按钮</button>
+
+<!-- 1,小程序的数据绑定:    利用  {{变量}} -> 双大括号语法 -->
+<view> hello {{name}} </view>
+<view> 我的年龄:{{age + 1}} </view>
+<view> ------------------ 分割线 ------------------- \n </view>
+
+
+<!-- 2,列表展示:   利用指令 wx:for -->
+<view wx:for="{{students}}"> {{item.name}} -- {{item.age}} -- {{item.id}} </view>
+<view> ------------------ 分割线 ------------------- \n </view>
+
+
+<!-- 3,事件监听改变data -->
+<view> 当前计数: {{counter}} \n </view>
+<button style="background-color:pink" size="mini" bindtap="handleBthClick"> + </button>
+<button style="background-color:skyblue" size="mini" bindtap="handleSubtraction"> - </button>
+
+
+
+<!-- 
+  编程范式:
+      1, 命令式编程
+      2, 声明式编程 
+-->
+
+ 
