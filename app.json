@@ -10,7 +10,7 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "我的购物街",
     "backgroundColor": "skyblue",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
   },
   "tabBar": {
