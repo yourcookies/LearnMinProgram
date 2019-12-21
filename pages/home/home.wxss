@@ -1,0 +1,30 @@
+/* pages/home/home.wxss */
+
+.title {
+  color: red;
+  font-size: 20px;
+}
+
+.btn {
+  background-color:pink; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
