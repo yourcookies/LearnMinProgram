@@ -30,7 +30,72 @@
 
 <!--  3.使用open-data组件 只能展示用户信息；    userNickName:用户昵称  userAvatarUrl:用户头像  -->
 <open-data type="userNickName"></open-data>
-
 <open-data type="userAvatarUrl"></open-data>
+
+
+
+
+
+
+
+<!-- // -------------课程: 注册Page时做什么   分割    --------------- -->
+
+<view bindtap="handleViewClick"> {{message}} </view>
+
+<view wx:for="{{list}}"> {{item.title}} </view>
+
+
+
+
+
+<text>
+
+-----------------         下拉页面          -------------------
+ 
+
+vsv
+svs
+vsv
+vsv
+vsvs
+vs
+v
+
+vs
+vs
+v
+sv
+sv
+s
+vsd
+v
+sv
+s
+vs
+v
+sv
+s
+vs
+v
+sv
+sv
+s
+dv
+sv
+sv
+s
+vs
+
+</text>
+
+
+
+
+
+
+
+
+
+
 
 

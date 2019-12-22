@@ -6,7 +6,7 @@ App({
    */
   onLaunch: function(options) {
     // 获取用户信息
-    console.log(options)
+    // console.log(options)
   },
 
 
@@ -18,20 +18,20 @@ App({
   onShow: function(options) {
 
     // 1，判断小程序的进入场景
-    console.log(options)
-    switch (options.scene) {
-      case 1001:
-        break;
-      case 1005:
-        break;
-    }
+    // console.log(options)
+    // switch (options.scene) {
+    //   case 1001:
+    //     break;
+    //   case 1005:
+    //     break;
+    // }
 
     // 2, 获取用户的信息, 并且获得用户信息之后，把用户的信息传递给服务器
-    wx.getUserInfo({
-      success: function(res) {
-        console.log(res)
-      }
-    })
+    // wx.getUserInfo({
+    //   success: function(res) {
+    //     console.log(res)
+    //   }
+    // })
 
   },
 
